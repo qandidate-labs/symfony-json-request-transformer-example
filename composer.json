@@ -1,0 +1,36 @@
+{
+  "name": "qandidate/symfony-json-request-transformer-example",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "othillo",
+      "email": "othillo@othillo.nl"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.4",
+    "qandidate/symfony-json-request-transformer": "~1.0",
+    "symfony/framework-standard-edition": "~2.5"
+  },
+  "autoload": {
+    "psr-0": {
+      "Qandidate\\DemoBundle": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:vonq/symfony-json-request-transformer.git"
+    }
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+    ],
+    "post-update-cmd": [
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+    ]
+  }
+}

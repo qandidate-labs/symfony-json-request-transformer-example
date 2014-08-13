@@ -1,0 +1,6 @@
+/vendor/
+composer.lock
+/web/bower_components/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/logs/*

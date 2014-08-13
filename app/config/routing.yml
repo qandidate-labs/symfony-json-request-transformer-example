@@ -1,0 +1,4 @@
+qandidate_demo:
+    resource: "@QandidateDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
